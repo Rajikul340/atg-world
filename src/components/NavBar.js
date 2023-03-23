@@ -56,7 +56,7 @@ const NavBar = () => {
               <Nav className="">
                 <NavDropdown id="dropdown" className=" ">
                   <div className=" me-md-5">
-                    <NavDropdown.Item className="">
+                    <NavDropdown.Item >
                       <Button
                         className=" border-0 "
                         variant=""
