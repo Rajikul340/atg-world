@@ -1,52 +1,55 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Col, Figure, Row } from "react-bootstrap";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import icon from "../img/Union 1.png";
+import { BiSearch } from "react-icons/bi";
+import { BsFillCaretDownFill } from "react-icons/bs";
 
-const NavBar = () =>{
-
+const NavBar = () => {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
-              </NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Link
-            </Nav.Link>
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className=" ms-5 " >
+      <Navbar expand="lg">
+        <Container fluid>
+          <Navbar.Brand href="/">
+            <span className="bgTitle fs-4">ATG.</span>
+            <span className="fs-4">
+              W
+              <Figure>
+                <Figure.Image width={22} height={16} alt="171x180" src={icon} />
+              </Figure>
+              RLD
+            </span>
+          </Navbar.Brand>
+
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll" className="justify-content-evenly">
+            <Form className=" ">
+              <Form.Control
+                type="search"
+                placeholder="search for your favorite groups ATG"
+                className="me-2  rounded-pill search-input "
+                aria-label="Search"
+                style={{ width: "360px", backgroundColor:"#F2F2F2" }}
+              />
+              <BiSearch size={20} className="positionTop" />
+            </Form>
+
+            <Nav className="freeSize">
+              <p className="">
+                create account.
+                <span className="m-2" style={{ color: "#2F6CE5" }}>
+                  it`s free
+                </span>
+                <BsFillCaretDownFill size={12} />
+              </p>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
   );
-}
+};
 
 export default NavBar;
