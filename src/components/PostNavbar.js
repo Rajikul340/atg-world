@@ -72,10 +72,12 @@ const PostNavbar = () => {
           </Nav>
         </div>
 
-        <div>
-          <Nav>
+        <div className="col-md-4">
+          <Nav className="">
             <Nav.Item>
-              <Button variant="light">
+              <Button variant="light"
+               className="me-3"
+              >
                 Write Post <BsFillCaretDownFill size={12} />
               </Button>
             </Nav.Item>

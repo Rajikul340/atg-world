@@ -48,6 +48,7 @@ img {
 .postHr{
   border: 2px solid #ddd;
  position: relative;
+ width: 87%;
 }
 .active{
   color: black !important;
@@ -58,4 +59,5 @@ img {
  width: 100px;
  border: 2px solid black;
  position: absolute;
+
 }
