@@ -1,3 +1,9 @@
+
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
 @media screen and (min-width: 768px) {
 .navMargin {
   margin-left: 250px;
@@ -35,4 +41,21 @@
 
 .bgTitle{
   color:#27A365;
+}
+img {
+  filter: blur(px);
+}
+.postHr{
+  border: 2px solid #ddd;
+ position: relative;
+}
+.active{
+  color: black !important;
+
+}
+
+.activeHr{
+ width: 100px;
+ border: 2px solid black;
+ position: absolute;
 }
