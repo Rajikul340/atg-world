@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Col, Nav, Row } from "react-bootstrap";
+import { Button, Col, Nav, NavDropdown, Row } from "react-bootstrap";
 import { AiOutlineUsergroupAdd } from "react-icons/ai";
 import { BsFillCaretDownFill } from "react-icons/bs";
 
@@ -26,7 +26,7 @@ const PostNavbar = () => {
               >
                 All Post(32)
               </Nav.Link>
-            {activeButton === "AllPost" ? <hr className="activeHr" /> : ""}
+              {activeButton === "AllPost" ? <hr className="activeHr" /> : ""}
             </Nav.Item>
 
             <Nav.Item>
@@ -73,17 +73,33 @@ const PostNavbar = () => {
         </div>
 
         <div className="col-md-4">
-          <Nav className="">
+          <Nav className=" d-flex align-items-center">
             <Nav.Item>
-              <Button variant="light"
-               className="me-3"
+              <Button
+                variant="light"
+                className="me-3 d-flex align-items-center  py-0"
               >
-                Write Post <BsFillCaretDownFill size={12} />
+                Write Post
+                <NavDropdown id="nav-dropdown-dark-example" className="textColor">
+                  <NavDropdown.Item href="#action/3.1" className="">
+                    Action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Another action
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Something
+                  </NavDropdown.Item>
+                  <NavDropdown.Divider />
+                  <NavDropdown.Item href="#action/3.4">
+                    Separated link
+                  </NavDropdown.Item>
+                </NavDropdown>
               </Button>
             </Nav.Item>
             <Nav.Item>
               <Button variant="primary">
-                <AiOutlineUsergroupAdd /> Join Group{" "}
+                <AiOutlineUsergroupAdd size={23} /> Join Group{" "}
               </Button>{" "}
             </Nav.Item>
           </Nav>

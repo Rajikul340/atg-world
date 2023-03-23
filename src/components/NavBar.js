@@ -1,4 +1,12 @@
-import { Col, Figure, Row } from "react-bootstrap";
+import {
+  Button,
+  Col,
+  Dropdown,
+  DropdownButton,
+  Figure,
+  NavDropdown,
+  Row,
+} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
@@ -6,10 +14,14 @@ import Navbar from "react-bootstrap/Navbar";
 import icon from "../img/Union 1.png";
 import { BiSearch } from "react-icons/bi";
 import { BsFillCaretDownFill } from "react-icons/bs";
+import React from "react";
+import Login from "../pages/Login";
 
 const NavBar = () => {
+    
+  const [modalShow, setModalShow] = React.useState(false);
   return (
-    <div className=" ms-5 " >
+    <div className=" ms-5 ">
       <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand href="/">
@@ -31,19 +43,40 @@ const NavBar = () => {
                 placeholder="search for your favorite groups ATG"
                 className="me-2  rounded-pill search-input "
                 aria-label="Search"
-                style={{ width: "360px", backgroundColor:"#F2F2F2" }}
+                style={{ width: "360px", backgroundColor: "#F2F2F2" }}
               />
               <BiSearch size={20} className="positionTop" />
             </Form>
 
             <Nav className="freeSize">
-              <p className="">
+              <p className="m-2">
                 create account.
-                <span className="m-2" style={{ color: "#2F6CE5" }}>
-                  it`s free
-                </span>
-                <BsFillCaretDownFill size={12} />
+                <span style={{ color: "#2F6CE5" }}> it`s free</span>
               </p>
+              <Nav className="">
+                <NavDropdown id="dropdown" className=" ">
+                  <div className=" me-md-5">
+                    <NavDropdown.Item className="">
+                      <Button
+                        className=" border-0 "
+                        variant=""
+                        style={{}}
+                        onClick={() => setModalShow(true)}
+                      >
+                        Login
+                      </Button>
+
+                      <Login
+                        show={modalShow}
+                        onHide={() => setModalShow(false)}
+                      />
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/register">
+                      Sign up{" "}
+                    </NavDropdown.Item>
+                  </div>
+                </NavDropdown>
+              </Nav>
             </Nav>
           </Navbar.Collapse>
         </Container>

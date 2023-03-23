@@ -1,14 +1,20 @@
 import React from "react";
-import { Button, Card, Col, Figure, Row } from "react-bootstrap";
+import {
+  Button,
+  Card,
+  Col,
+  Figure,
+  Nav,
+  NavDropdown,
+  Row,
+} from "react-bootstrap";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 import { BsBag } from "react-icons/bs";
-import { BsFillCalendar2DateFill } from "react-icons/bs";
+import { BsThreeDots } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 
 const SingleCard = ({ data }) => {
-  console.log(data);
-
   return (
     <Card className="my-4">
       <Card.Img variant="top" src={data.coverImg} />
@@ -29,10 +35,16 @@ const SingleCard = ({ data }) => {
             <div className="" style={{ width: "50px", height: "50px" }}>
               <Button
                 variant="outline-light"
-                style={{ width: "50px", height: "20px", fontSize: "20px" }}
-                className=" text-black "
+                className=" text-black dot d-flex align-items-center"
+                style={{ fontSize: "20px" }}
               >
-                ...
+                <BsThreeDots className="relative" />
+
+                <NavDropdown id="dropdown" className="">
+                  <NavDropdown.Item>Edit</NavDropdown.Item>
+                  <NavDropdown.Item>Report </NavDropdown.Item>
+                  <NavDropdown.Item>Option 3</NavDropdown.Item>
+                </NavDropdown>
               </Button>
             </div>
           </div>

@@ -21,7 +21,7 @@ body {
  }
  .freeSize{
    /* margin-left: 30px; */
-   margin-right: -190px;
+   margin-right: -170px;
  }
 }
 
@@ -60,4 +60,35 @@ img {
  border: 2px solid black;
  position: absolute;
 
+}
+.textColor {
+  color: white !important;
+}
+
+
+.dot .dropdown-toggle::after {
+ visibility: hidden;
+}
+
+.custom-modal .modal-dialog {
+  max-width: 736px;
+  position: relative;
+}
+
+
+.Icon{
+  color: black;
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+ background: white;
+ border-radius: 100%;
+
+}
+.modal-header {
+  border-bottom: 0 none;
+}
+
+.modal-footer {
+  border-top: 0 none;
 }
