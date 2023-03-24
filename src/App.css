@@ -1,13 +1,22 @@
 
 
-body {
-  font-family: 'IBM Plex Sans', sans-serif;
+body{
+  font-family: " font-family: 'IBM Plex Sans', sans-serif;";
 }
 
 @media screen and (min-width: 768px) {
 .navMargin {
   margin-left: 250px;
 }
+.banner-img{
+  position: relative;
+ }
+ .banner-desc{
+  position: absolute;
+  top: 40%;
+  left: 134px;
+  font-family: " font-family: 'IBM Plex Sans', sans-serif;";
+ }
 
 .positionTop{
   position: absolute;
@@ -29,13 +38,32 @@ body {
 @media screen and (max-width: 767px) {
   .positionTop{
     position: absolute;
-    top: 49%;
+    top: 42%;
     left: 7%;
    }
    
    .search-input::placeholder {
     position: relative;
     padding: 28px;
+   }
+   .banner-img{
+    position: relative;
+   }
+   .closeBtn{
+    width: 0;
+    padding:0;
+    height: 0;
+   }
+   .GroupBtn{
+    position: absolute;
+    top: 10%;
+   }
+   .banner-desc{
+    position: absolute;
+    top: 38%;
+    left: 20px;
+    font-size: 18px;
+    font-family: " font-family: 'IBM Plex Sans', sans-serif;";
    }
 }
 

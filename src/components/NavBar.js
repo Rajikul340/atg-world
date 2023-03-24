@@ -13,15 +13,15 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import icon from "../img/Union 1.png";
 import { BiSearch } from "react-icons/bi";
-import { BsFillCaretDownFill } from "react-icons/bs";
 import React from "react";
 import Login from "../pages/Login";
+
 
 const NavBar = () => {
     
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <div className=" ms-5 ">
+    <div className=" ms-5 d-none d-md-block ">
       <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand href="/">
