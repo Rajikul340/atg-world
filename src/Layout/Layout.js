@@ -5,8 +5,10 @@ import NavBar from '../components/NavBar';
 
 const Layout = () => {
     return (
-        <div>
-           <NavBar/>
+        <div >
+          
+          <NavBar/>
+        
            <Outlet/>
            
         </div>

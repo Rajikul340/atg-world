@@ -1,72 +1,56 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import cardImg1 from "../img/Rectangle 5 (1).png";
 import { GoLocation } from "react-icons/go";
 import { MdModeEditOutline } from "react-icons/md";
 import { FiAlertCircle } from "react-icons/fi";
-import sarthak from "../img/Rectangle 3 (3).png";
-import article from "../img/✍️ Article.png";
-import sarah from "../img/Rectangle 3 (2).png";
-import education from "../img/🔬️ Education.png";
-import hill from "../img/Rectangle 5.png";
-import lock from "../img/Rectangle 5 (1).png";
-import car from "../img/Rectangle 5 (2).png";
-import meetup from "../img/🗓️ Meetup.png";
-import ronal from "../img/Rectangle 3 (1).png";
-import joseph from "../img/Rectangle 3.png";
-import job from "../img/💼️ Job.png";
 import SingleCard from "./SingleCard";
 import { AiOutlineLike } from "react-icons/ai";
-import leisure from "../img/leisure.png";
-import activision from "../img/activism.png";
-import mbs from "../img/mba.png";
-import philosophy from "../img/philosophy.png";
 import SingleGroup from "./SingleGroup";
 import { Link } from "react-router-dom";
+
+
 
 const cardData = [
   {
     id: "1",
-    coverImg: hill,
+    coverImg: "https://i.ibb.co/Qcyt3gH/Rectangle-5.png",
     Name: "Sarthak Kamra",
     title: " Waht if famouse brands had regula fonts ? Meet RegulaBrands",
-    img: sarthak,
-    icon: article,
+    img: "https://i.ibb.co/ySBwbzd/Rectangle-3-3.png",
+    icon: "https://i.ibb.co/N9j3CxW/Article.png",
     views: "1.4",
     description:
       "   i ve worked in ux for the better part of a decade. From now on, I plan to reiceved...",
   },
   {
     id: "2",
-    coverImg: lock,
+    coverImg: "https://i.ibb.co/TKbHfmy/Rectangle-5-1.png",
     Name: "Sarah West",
     title:
       "Tax Benefits for Investment under National Pesion Seheme launched by Government",
-    img: sarah,
-    icon: education,
+    img: "https://i.ibb.co/SPgt9gk/Rectangle-3-2.png",
+    icon:"https://i.ibb.co/4V6BfR6/Education.png" ,
     views: "1.4",
     description:
       "   i ve worked in ux for the better part of a decade. From now on, I plan to reiceved...",
   },
   {
     id: "3",
-    coverImg: car,
+    coverImg: "https://i.ibb.co/B6P3nWh/Rectangle-5-2.png",
     Name: "Ronal Jones",
     title: "Finance & Investment Elite Social Mixer @Lujiazui",
     date: "Fri, 12 Oct, 2108",
     location: "Ahmedahad, india",
-    img: ronal,
-    icon: meetup,
+    img: "https://i.ibb.co/9vsBwsC/Rectangle-3-1.png",
+    icon: "https://i.ibb.co/thHMyRC/Meetup.png",
     views: "1.4",
   },
   {
     id: "4",
     Name: "Joseph Gray",
     title: " Software Development",
-    img: joseph,
-    icon: job,
+    img: "https://i.ibb.co/176tntc/Rectangle-3.png",
+    icon: "https://i.ibb.co/ss1M8k5/Job.png",
     location: "Noida, India",
     views: "1.4",
     company: "  Innovaccer Analytices Private Ltd",
@@ -77,22 +61,22 @@ const groupData = [
   {
     id: "1",
     groupName: "leisure",
-    groupImg: leisure,
+    groupImg: "https://i.ibb.co/6Ych1Pg/leisure.png",
   },
   {
     id: "2",
     groupName: "Activism",
-    groupImg: activision,
+    groupImg: "https://i.ibb.co/0rqRq2N/activism.png",
   },
   {
     id: "3",
     groupName: "MBA",
-    groupImg: mbs,
+    groupImg: "https://i.ibb.co/pxFk365/mba.png",
   },
   {
     id: "4",
     groupName: "philosophy",
-    groupImg: philosophy,
+    groupImg: "https://i.ibb.co/0Mj1twT/philosophy.png",
   },
 ];
 const CardData = () => {

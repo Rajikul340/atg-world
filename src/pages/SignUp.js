@@ -3,9 +3,6 @@ import { Button, Col, Figure, Modal, Row } from "react-bootstrap";
 import { AiFillEye } from "react-icons/ai";
 import { BiHide } from "react-icons/bi";
 import Form from "react-bootstrap/Form";
-import loginimg from "../img/loginicon.png";
-import facebookLogo from "../img/facebook.png";
-import googleLogo from "../img/google-logo-9808.png";
 import Image from "react-bootstrap/Image";
 import { Link } from "react-router-dom";
 
@@ -144,7 +141,7 @@ const SignUp = (props) => {
               className="col-12 mb-2 border d-flex  justify-content-center align-items-center "
             >
               <Image
-                src={facebookLogo}
+                src="https://i.ibb.co/0ZKjbBQ/facebook.png"
                 className="mt-1 me-2"
                 width={20}
                 alt="facebook-logo"
@@ -157,7 +154,7 @@ const SignUp = (props) => {
               className="col-12 mb-3 border d-flex  justify-content-center align-items-center"
             >
               <Image
-                src={googleLogo}
+                src="https://i.ibb.co/q7Yfkgn/google-logo-9808.png"
                 className="mt- me-2"
                 width={20}
                 alt="googleLogo-logo"
@@ -167,7 +164,7 @@ const SignUp = (props) => {
           </Col>
           <Col md={5} className="mx-auto d-none d-md-block">
             <Figure>
-              <Figure.Image alt="171x180" src={loginimg} />
+              <Figure.Image alt="171x180" src="https://i.ibb.co/pZN0z71/loginicon.png" />
             </Figure>
           </Col>
         </Row>

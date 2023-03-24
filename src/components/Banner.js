@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Figure } from "react-bootstrap";
-import bannerImg from "../img/homeImg.jpg";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import SignUp from "../pages/SignUp";
 
@@ -13,7 +12,7 @@ const Banner = () => {
         <Figure.Image
           alt="banner-img"
           style={{ height: "440px", width: "1440px" }}
-          src={bannerImg}
+          src="https://i.ibb.co/qjmSF52/homeImg.jpg" 
         />
         <div className="d-md-none d-block">
         <div className="col-12 d-flex  justify-content-between px-3 GroupBtn">

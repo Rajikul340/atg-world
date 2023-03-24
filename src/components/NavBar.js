@@ -1,8 +1,5 @@
 import {
   Button,
-  Col,
-  Dropdown,
-  DropdownButton,
   Figure,
   NavDropdown,
   Row,
@@ -11,7 +8,6 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import icon from "../img/Union 1.png";
 import { BiSearch } from "react-icons/bi";
 import React from "react";
 import Login from "../pages/Login";
@@ -21,7 +17,8 @@ const NavBar = () => {
     
   const [modalShow, setModalShow] = React.useState(false);
   return (
-    <div className=" ms-5 d-none d-md-block ">
+  
+         <div className=" ms-5 d-none d-md-block ">
       <Navbar expand="lg">
         <Container fluid>
           <Navbar.Brand href="/">
@@ -29,7 +26,7 @@ const NavBar = () => {
             <span className="fs-4">
               W
               <Figure>
-                <Figure.Image width={22} height={16} alt="171x180" src={icon} />
+                <Figure.Image width={22} height={16} alt="171x180" src="https://i.ibb.co/N6vTXz3/Union-1.png"/>
               </Figure>
               RLD
             </span>
@@ -82,6 +79,7 @@ const NavBar = () => {
         </Container>
       </Navbar>
     </div>
+  
   );
 };
 
